@@ -110,7 +110,11 @@ git checkout命令加上-b参数表示创建并切换，相当于以下两条命
 $ git branch dev
 $ git checkout dev
 然后，用git branch命令查看当前分支：
-
+在dev分支上做一些add commit，然后切换到master分支上，最后，我们把dev分支的工作成果合并到master分支上：
+$ git merge dev
+git merge命令用于合并指定分支到当前分支
+合并完成后，就可以放心地删除dev分支了
+$ git branch -d dev
 #忽略特殊文件
 1.在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件。
 2.把.gitignore也提交到Git，就完成了！

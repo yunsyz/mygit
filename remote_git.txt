@@ -104,6 +104,12 @@ Warning: Permanently added 'github.com' (RSA) to the list of known hosts.
 现在，假设我们从零开发，那么最好的方式是先创建远程库，然后，从远程库克隆。
 $ git clone git@github.com:GitHub账户名/GitHub远程库名.git
 #创建与合并分支
+首先，我们创建dev分支，然后切换到dev分支：
+$ git checkout -b dev
+git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：
+$ git branch dev
+$ git checkout dev
+然后，用git branch命令查看当前分支：
 
 #忽略特殊文件
 1.在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件。

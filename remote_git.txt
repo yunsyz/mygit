@@ -115,6 +115,8 @@ $ git merge dev
 git merge命令用于合并指定分支到当前分支
 合并完成后，就可以放心地删除dev分支了
 $ git branch -d dev
+#删除远程分支
+git push origin :<remote_branch> #先删除本地分支(git br -d <branch>)，然后再push删除远程分支
 #忽略特殊文件
 1.在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件。
 2.把.gitignore也提交到Git，就完成了！
